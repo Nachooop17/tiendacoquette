@@ -124,3 +124,97 @@ body {
 .product-description strong {
   font-weight: bold;
 }
+
+.navbar-nav {
+  margin-left: 0px; /* Ajusta este valor para controlar el espacio */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 15px; /* Esto ajusta el espacio entre los elementos del navbar */
+}
+
+body{
+
+  background: #ffffff;
+}
+
+.height {
+  height: 100vh;
+}
+
+.form {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px; /* Bordes redondeados */
+  padding: 5px 15px;
+  margin-left: 20px; /* Espacio entre la barra de búsqueda y los enlaces */
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: #9ca3af;
+}
+
+.form span {
+  position: absolute;
+  right: 17px;
+  top: 13px;
+  padding: 2px;
+  border-left: 1px solid #d1d5db;
+}
+
+.left-pan {
+  padding-left: 7px;
+}
+
+.left-pan i {
+  padding-left: 10px;
+}
+
+.form-input {
+  height: 55px;
+  text-indent: 33px;
+  border-radius: 10px;
+  width: 250px; /* Ancho fijo para la barra de búsqueda */
+}
+
+.form-input:focus {
+  box-shadow: none;
+  border: none;
+}
+
+/* Estilo para la barra de búsqueda en el navbar */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .navbar-nav {
+  margin-right: auto; /* Empuja el contenido hacia la izquierda */
+}
+
+.navbar .form {
+  margin-left: 20px; /* Espacio entre la barra de búsqueda y los enlaces */
+}
+
+/* Asegura que la barra de búsqueda esté alineada a la derecha */
+.navbar .form {
+  display: flex;
+  align-items: center;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  .navbar .form {
+      width: 100%; /* La barra de búsqueda ocupa el 100% del ancho */
+  }
+
+  .navbar .form-input {
+      width: 100%; /* Ajusta el input para ocupar el 100% en pantallas pequeñas */
+  }
+}
