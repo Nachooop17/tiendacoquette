@@ -1,0 +1,78 @@
+/* Colores base */
+:root {
+  --principal: #ffc2b7;
+  --blanco: #ffffff;
+  --negro: #212529;
+}
+
+/* General */
+body {
+  background-color: var(--blanco);
+  color: var(--negro);
+  font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+  background-color: var(--principal) !important;
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--negro) !important;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background-color: var(--principal);
+  color: var(--negro);
+  padding: 60px 0;
+  text-align: center;
+}
+
+.hero .btn-primary {
+  background-color: var(--negro);
+  border: none;
+}
+
+.hero .btn-primary:hover {
+  background-color: #333;
+}
+
+.footer {
+  background-color: var(--principal);
+  color: var(--negro);
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+/* Estilo para la imagen flotante */
+/* Estilo para la imagen flotante */
+/* Estilo para la imagen flotante */
+/* Estilo para la imagen flotante */
+.floating-lazo {
+  position: absolute;
+  width: 50px; /* Tamaño de la imagen */
+  height: 50px; /* Tamaño de la imagen */
+  background-image: url('/assets/img/lazo_pequeño.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: -1;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: float 5s linear infinite;
+}
+
+/* Animación para hacer que las imágenes caigan */
+@keyframes float {
+  0% {
+    transform: translateY(-100px); /* Empieza fuera de la pantalla */
+  }
+  100% {
+    transform: translateY(100vh); /* Cae hasta la parte inferior de la pantalla */
+  }
+}
