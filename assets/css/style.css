@@ -6,7 +6,14 @@
 }
 
 /* General */
+html, body {
+  height: 100%;
+  margin: 0;
+}
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--blanco);
   color: var(--negro);
   font-family: 'Arial', sans-serif;
@@ -49,6 +56,11 @@ body {
   padding: 20px 0;
   margin-top: 50px;
 }
+.carousel-inner img {
+  object-fit: cover; /* Asegura que las imágenes llenen el carrusel correctamente */
+  height: 400px; /* Puedes ajustar la altura a lo que necesites */
+}
+
 
 /* Estilo para la imagen flotante */
 /* Estilo para la imagen flotante */
@@ -73,6 +85,6 @@ body {
     transform: translateY(-100px); /* Empieza fuera de la pantalla */
   }
   100% {
-    transform: translateY(100vh); /* Cae hasta la parte inferior de la pantalla */
+    transform: translateY(100vh); /* Cae hasta la parte  inferior de la pantalla */
   }
 }
